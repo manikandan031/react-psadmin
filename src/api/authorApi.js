@@ -19,6 +19,9 @@ var AuthorApi = {
 	},
 
 	getAuthorById: function(id) {
+		if(id === undefined || id === null){
+			return null;
+		}
 		var author = _.find(authors, {id: id});
 		return _clone(author);
 	},

@@ -8,7 +8,7 @@ var About = React.createClass({
             }
         },
         willTransitionFrom: function(transition, component){
-            //transition.about() is not working. Need to figure out
+            //transition.abort(); is not working. Need to figure out
         }
     },
     render: function(){
